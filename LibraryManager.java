@@ -1,6 +1,5 @@
 import java.util.List;
 
-// Interface for Library Management
 public interface LibraryManager {
     boolean issueBook(Book book, Reader reader);
 

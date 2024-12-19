@@ -1,4 +1,3 @@
-// Factory for creating Books
 public class BookFactory {
     public static Book createBook(String category, String id, String title, String author) {
         switch (category) {

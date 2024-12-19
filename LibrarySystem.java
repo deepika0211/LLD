@@ -1,14 +1,12 @@
 import java.util.*;
 import java.util.concurrent.atomic.AtomicReference;
 
-// Library System Implementation
 public class LibrarySystem implements LibraryManager {
     private final Map<String, Book> booksCatalog = new HashMap<>();
     private final AtomicReference<Reader> activeReader = new AtomicReference<>(null);
     private final Map<Reader, Date> issueDates = new HashMap<>();
 
     public LibrarySystem() {
-        // Initialize books in the catalog
         booksCatalog.put("B001", BookFactory.createBook("Comic", "B001", "The Adventures of Tom", "Mark Twain"));
         booksCatalog.put("B002", BookFactory.createBook("Fiction", "B002", "1984", "George Orwell"));
         booksCatalog.put("B003", BookFactory.createBook("NonFiction", "B003", "Sapiens", "Yuval Noah Harari"));

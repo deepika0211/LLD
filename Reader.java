@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-// User Class
 public class Reader extends Person {
     private Book currentlyIssuedBook;
     private List<Book> reservedBooks;

@@ -1,4 +1,3 @@
-// Abstract class for Book
 public abstract class Book {
     private String id;
     private String title;
